@@ -20,7 +20,38 @@
 
 .links{
     display: flex;
+    align-items: center;
     gap: 20px;
     flex: 1;
     font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .logo{
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .links{
+        font-size: 18px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo{
+        font-size: 24px;
+    }
+
+    .links{
+        justify-content: flex-end;
+    }
+
+    .link{
+        display: none;
+    }
 }
