@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { signInWithGoogle } from "@/actions/authActions";
 
 const LoginPage = () => {
-  const { status } = useSession();
+  const { data, status } = useSession();
   const router = useRouter();
 
   useEffect(() => {
@@ -22,13 +22,19 @@ const LoginPage = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <form action={signInWithGoogle}>
+        <form action={signInWithGoogle} className={styles.wrapper}>
           <button type="submit" className={styles.socialButton}>
             Sign in with Google
           </button>
+          
+          {/* GitHub e Facebook inativos por enquanto */}
+          <button className={styles.socialButton} disabled>
+            Sign in with GitHub (em breve)
+          </button>
+          <button className={styles.socialButton} disabled>
+            Sign in with Facebook (em breve)
+          </button>
         </form>
-      </div>
     </div>
   );
 };

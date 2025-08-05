@@ -8,8 +8,21 @@ import 'react-quill-new/dist/quill.snow.css';
 import { useRouter } from "next/navigation";
 
 const WritePage = () => {
+
+    const { status } = useSession();
+    const router = useRouter();
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState("");
+
+    useEffect(() => {
+        if (status === "authenticated") {
+        router.push("/");
+        }
+    }, [status, router]);
+
+    if (status === "loading") {
+        return <div className={styles.loading}>Loading...</div>;
+    }
 
   return (
     <div className={styles.container}>
