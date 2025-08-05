@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br">
+    <html lang="en">
       <body className={inter.className}>
         <ThemeContextProvider>
           <ThemeProvider>
