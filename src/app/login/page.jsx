@@ -1,4 +1,42 @@
 "use client";
+
+import { useSession } from "next-auth/react";
+import styles from "./loginPage.module.css";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { signInWithGoogle } from "@/actions/authActions";
+
+const LoginPage = () => {
+  const { status } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === "authenticated") {
+      router.push("/");
+    }
+  }, [status, router]);
+
+  if (status === "loading") {
+    return <div className={styles.loading}>Loading...</div>;
+  }
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <form action={signInWithGoogle}>
+          <button type="submit" className={styles.socialButton}>
+            Sign in with Google
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default LoginPage;
+
+
+{/*"use client";
 import { signIn, useSession } from "next-auth/react";
 import styles from "./loginPage.module.css";
 import { useRouter } from "next/navigation";
@@ -29,4 +67,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default LoginPage;*/}
