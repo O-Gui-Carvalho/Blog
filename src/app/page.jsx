@@ -2,11 +2,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#F2F2F2] dark:bg-[#00111A] text-[#00111A] dark:text-[#F2F2F2] transition-all duration-300">
-      <div className="max-w-3xl text-start space-y-10">
-        <p className="text-2xl text-[#576B75] dark:text-[#B6C2C9]">Blog CtrlDev</p>
-        <h1 className="text-6xl">Aqui falamos de tudo, desde que tenha código!</h1>
+    <main className="min-h-screen pt-56 max-w-[1400px] w-[90vw] mx-auto background transition-colors duration-300">
+      <div className="text-start space-y-5 mb-24">
+        <p className="text-2xl text-blog-sec">Blog CtrlDev</p>
+        <h1 className="text-6xl text-blog">Aqui falamos sobre desenvolvimento de sites.</h1>
       </div>
-    </div>
+      <div className="text-blog-sec max-w-xl flex items-center justify-between">
+        <span>Recentes</span>
+        <span>Design</span>
+        <span>Programação</span>
+        <span>Web</span>
+        <span>Jogos</span>
+      </div>
+    </main>
   );
-}
+};

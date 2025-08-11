@@ -1,3 +1,19 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+.background{
+    @apply bg-[#F2F2F2] dark:bg-[#00111A];
+}
+
+.text-blog{
+    @apply text-[#00111A] dark:text-[#F2F2F2]
+}
+
+.text-blog-sec {
+  @apply text-[#576B75] dark:text-[#B6C2C9];
+}
+
+.button{
+  @apply flex items-center justify-center gap-2 max-w-fit py-4 px-8 rounded-lg bg-[#CCEEFF] dark:bg-[#083045] hover:bg-[#083045] dark:hover:bg-[#CCEEFF] hover:text-[#CCEEFF] dark:hover:text-[#083045] cursor-pointer transition-colors duration-300;
+}

@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} flex flex-col min-h-screen justify-between`}
+        className={`${inter.className} background transition-colors duration-300 flex flex-col min-h-screen justify-between`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <Header/>
