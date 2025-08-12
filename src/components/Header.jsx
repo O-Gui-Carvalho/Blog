@@ -7,7 +7,7 @@ import ToggleTheme from './ToggleTheme'
 
 const Header = () => {
   return (
-    <header className='w-full border-b-gray-200 border-b dark:border-[#083045] fixed background transition-colors duration-300'>
+    <header className='w-full border-b-gray-200 border-b dark:border-[#083045] fixed background transition-colors duration-300 z-50'>
         <div className='flex justify-between max-w-[90vw] mx-auto py-6'>
             <Link href="/">
               <svg width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">

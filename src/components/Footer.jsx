@@ -52,13 +52,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[90vw] mx-auto mt-16 flex justify-between items-end">
-          <div className="flex gap-8 text-blog-sec">
+          <div className="flex gap-16 text-blog-sec text-sm">
             <a href="/">Awwwards</a>
             <a href="/">Linkedin</a>
             <a href="/">Instagram</a>
             <a href="/">Dribble</a>
           </div>
-          <a href="/" className='button'><FaArrowUp/></a>
+          <a href="/" className='button'><FaArrowUp className='text-xl'/></a>
         </div>
     </footer>
   )

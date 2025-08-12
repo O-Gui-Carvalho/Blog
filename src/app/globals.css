@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .background{
-    @apply bg-[#F2F2F2] dark:bg-[#00111A];
+    @apply bg-[#F2F2F2] dark:bg-[#041016];
 }
 
 .text-blog{
