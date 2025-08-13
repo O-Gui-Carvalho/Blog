@@ -1,4 +1,5 @@
 import Articles from "@/components/Articles";
+import Subscribe from "@/components/Subscribe";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <h1 className="text-6xl text-blog max-w-[900px]">Aqui falamos sobre desenvolvimento de sites.</h1>
       </div>
       <Articles/>
+      <Subscribe/>
     </main>
   );
 };
