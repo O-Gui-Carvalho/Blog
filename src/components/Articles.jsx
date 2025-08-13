@@ -6,85 +6,133 @@ const Articles = () => {
   return (
     <div className="max-w-[1400px] w-[90vw] mx-auto">
         <ArticlesNav/>
-        <div className="my-24">
-
-            <div className="flex gap-8 mb-16">
-                <div className="relative">
-                    <div className="overflow-hidden rounded-xl cursor-pointer group">
-                        <Image src='/frontend.jpg' alt='Capa do post Frontend' width={1480} height={986} className='transition-transform duration-300 group-hover:scale-105 object-cover'/>
+        <div className="grid grid-cols-3 grid-rows-3 gap-x-8 gap-y-16 my-24">
+            <article className='col-span-2 group relative flex flex-col justify-start cursor-pointer'>
+                <div>
+                    <div className="relative h-[358px] overflow-hidden rounded-2xl xl:h-[442px]">
+                        <Image loading='lazy' src='/frontend.jpg' alt='How to Develop a Healthcare App: Build Secure & Compliant Medical Apps' width={1480} height={986} className='aspect-square transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full'/>
                         <div className="absolute top-6 left-6 flex flex-wrap gap-2">
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#f2f2f240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Front-End</a>
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#F2F2F240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Web</a>
                         </div>
                     </div>
-                    <div className="p-4 flex flex-col gap-4">
-                        <p className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained </p>
-                        <span className='text-blog-sec text-sm'>12 de agosto, 2025</span>
+                    <div className="mt-6 flex flex-col items-start px-1">
+                        <a href="/">
+                            <h2 className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained</h2>
+                        </a>
                     </div>
                 </div>
+                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+            </article>
 
-                <div className="relative">
-                    <div className="overflow-hidden rounded-xl cursor-pointer group">
-                        <Image src='/blog-cover-2.png' alt='Capa do post Backend' width={1480} height={986} className='transition-transform duration-300 group-hover:scale-105 object-cover'/>
+            <article className='col-start-3 group relative flex flex-col justify-start cursor-pointer'>
+                <div>
+                    <div className="relative h-[358px] overflow-hidden rounded-2xl xl:h-[442px]">
+                        <Image loading='lazy' src='/blog-cover-2.png' alt='How to Develop a Healthcare App: Build Secure & Compliant Medical Apps' width={1480} height={986} className='aspect-square transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full'/>
                         <div className="absolute top-6 left-6 flex flex-wrap gap-2">
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#f2f2f240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Front-End</a>
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#F2F2F240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Web</a>
                         </div>
                     </div>
-                    <div className="p-4 flex flex-col gap-4">
-                        <p className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained </p>
-                        <span className='text-blog-sec text-sm'>12 de agosto, 2025</span>
+                    <div className="mt-6 flex flex-col items-start px-1">
+                        <a href="/">
+                            <h2 className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained</h2>
+                        </a>
                     </div>
                 </div>
-            </div>
+                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+            </article>
 
-            <div className="flex gap-8">
-                <div className="relative">
-                    <div className="overflow-hidden rounded-xl cursor-pointer group">
-                        <Image src='/blog-cover-3.jpg' alt='Capa do post Frontend' width={1480} height={986} className='transition-transform duration-300 group-hover:scale-105 aspect-square object-cover'/>
+            <article className='row-start-2 group relative flex flex-col justify-start cursor-pointer'>
+                <div>
+                    <div className="relative h-[358px] overflow-hidden rounded-2xl xl:h-[442px]">
+                        <Image loading='lazy' src='/blog-cover-3.jpg' alt='How to Develop a Healthcare App: Build Secure & Compliant Medical Apps' width={1480} height={986} className='aspect-square transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full'/>
                         <div className="absolute top-6 left-6 flex flex-wrap gap-2">
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#f2f2f240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Front-End</a>
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#F2F2F240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Web</a>
                         </div>
                     </div>
-                    <div className="p-4 flex flex-col gap-4">
-                        <p className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained </p>
-                        <span className='text-blog-sec text-sm'>12 de agosto, 2025</span>
+                    <div className="mt-6 flex flex-col items-start px-1">
+                        <a href="/">
+                            <h2 className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained</h2>
+                        </a>
                     </div>
                 </div>
+                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+            </article>
 
-                <div className="relative">
-                    <div className="overflow-hidden rounded-xl cursor-pointer group">
-                        <Image src='/blog-cover-4.jpg' alt='Capa do post Frontend' width={1480} height={986} className='transition-transform duration-300 group-hover:scale-105 aspect-square object-cover'/>
+            <article className='row-start-2 group relative flex flex-col justify-start cursor-pointer'>
+                <div>
+                    <div className="relative h-[358px] overflow-hidden rounded-2xl xl:h-[442px]">
+                        <Image loading='lazy' src='/blog-cover-4.jpg' alt='How to Develop a Healthcare App: Build Secure & Compliant Medical Apps' width={1480} height={986} className='aspect-square transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full'/>
                         <div className="absolute top-6 left-6 flex flex-wrap gap-2">
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#f2f2f240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Front-End</a>
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#F2F2F240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Web</a>
                         </div>
                     </div>
-                    <div className="p-4 flex flex-col gap-4">
-                        <p className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained </p>
-                        <span className='text-blog-sec text-sm'>12 de agosto, 2025</span>
+                    <div className="mt-6 flex flex-col items-start px-1">
+                        <a href="/">
+                            <h2 className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained</h2>
+                        </a>
                     </div>
                 </div>
+                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+            </article>
 
-                <div className="relative">
-                    <div className="overflow-hidden rounded-xl cursor-pointer group">
-                        <Image src='/blog-cover-5.jpg' alt='Capa do post Frontend' width={1480} height={986} className='transition-transform duration-300 group-hover:scale-105 aspect-square object-cover'/>
+            <article className='row-start-2 group relative flex flex-col justify-start cursor-pointer'>
+                <div>
+                    <div className="relative h-[358px] overflow-hidden rounded-2xl xl:h-[442px]">
+                        <Image loading='lazy' src='/blog-cover-5.jpg' alt='How to Develop a Healthcare App: Build Secure & Compliant Medical Apps' width={1480} height={986} className='aspect-square transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full'/>
                         <div className="absolute top-6 left-6 flex flex-wrap gap-2">
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#f2f2f240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Front-End</a>
                             <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#F2F2F240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Web</a>
                         </div>
                     </div>
-                    <div className="p-4 flex flex-col gap-4">
-                        <p className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained </p>
-                        <span className='text-blog-sec text-sm'>12 de agosto, 2025</span>
+                    <div className="mt-6 flex flex-col items-start px-1">
+                        <a href="/">
+                            <h2 className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained</h2>
+                        </a>
                     </div>
                 </div>
-            </div>
+                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+            </article>
+
+            <article className='row-start-3 group relative flex flex-col justify-start cursor-pointer'>
+                <div>
+                    <div className="relative h-[358px] overflow-hidden rounded-2xl xl:h-[442px]">
+                        <Image loading='lazy' src='/blog-cover-6.jpg' alt='How to Develop a Healthcare App: Build Secure & Compliant Medical Apps' width={1480} height={986} className='aspect-square transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full'/>
+                        <div className="absolute top-6 left-6 flex flex-wrap gap-2">
+                            <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#f2f2f240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Front-End</a>
+                            <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#F2F2F240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Web</a>
+                        </div>
+                    </div>
+                    <div className="mt-6 flex flex-col items-start px-1">
+                        <a href="/">
+                            <h2 className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained</h2>
+                        </a>
+                    </div>
+                </div>
+                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+            </article>
+
+            <article className='col-span-2 row-start-3 group relative flex flex-col justify-start cursor-pointer'>
+                <div>
+                    <div className="relative h-[358px] overflow-hidden rounded-2xl xl:h-[442px]">
+                        <Image loading='lazy' src='/blog-cover-7.jpg' alt='How to Develop a Healthcare App: Build Secure & Compliant Medical Apps' width={1480} height={986} className='aspect-square transition-transform duration-300 group-hover:scale-105 object-cover h-full w-full'/>
+                        <div className="absolute top-6 left-6 flex flex-wrap gap-2">
+                            <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#f2f2f240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Front-End</a>
+                            <a href="" className='bg-[#08304540] text-[#f2f2f2] py-1 px-4 border border-[#F2F2F240] rounded-full text-[12px] backdrop-blur-xl text-nowrap transition-colors duration-300 hover:bg-[#083045bf]'>Web</a>
+                        </div>
+                    </div>
+                    <div className="mt-6 flex flex-col items-start px-1">
+                        <a href="/">
+                            <h2 className='text-blog text-2xl'>Website redesign services: strategy, process, and cost explained</h2>
+                        </a>
+                    </div>
+                </div>
+                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+            </article>
             
-            <div className="flex justify-center my-12">
-                <button className='button'>Veja Mais</button>
-            </div>
         </div>
     </div>
   )
