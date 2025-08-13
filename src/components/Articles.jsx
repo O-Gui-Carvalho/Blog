@@ -22,7 +22,7 @@ const Articles = () => {
                         </a>
                     </div>
                 </div>
-                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+                <p className='mt-2 px-1 text-blog-sec text-[12px]'>12 de agosto, 2025</p>
             </article>
 
             <article className='col-start-3 group relative flex flex-col justify-start cursor-pointer'>
@@ -40,7 +40,7 @@ const Articles = () => {
                         </a>
                     </div>
                 </div>
-                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+                <p className='mt-2 px-1 text-blog-sec text-[12px]'>12 de agosto, 2025</p>
             </article>
 
             <article className='row-start-2 group relative flex flex-col justify-start cursor-pointer'>
@@ -58,7 +58,7 @@ const Articles = () => {
                         </a>
                     </div>
                 </div>
-                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+                <p className='mt-2 px-1 text-blog-sec text-[12px]'>12 de agosto, 2025</p>
             </article>
 
             <article className='row-start-2 group relative flex flex-col justify-start cursor-pointer'>
@@ -76,7 +76,7 @@ const Articles = () => {
                         </a>
                     </div>
                 </div>
-                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+                <p className='mt-2 px-1 text-blog-sec text-[12px]'>12 de agosto, 2025</p>
             </article>
 
             <article className='row-start-2 group relative flex flex-col justify-start cursor-pointer'>
@@ -94,7 +94,7 @@ const Articles = () => {
                         </a>
                     </div>
                 </div>
-                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+                <p className='mt-2 px-1 text-blog-sec text-[12px]'>12 de agosto, 2025</p>
             </article>
 
             <article className='row-start-3 group relative flex flex-col justify-start cursor-pointer'>
@@ -112,7 +112,7 @@ const Articles = () => {
                         </a>
                     </div>
                 </div>
-                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+                <p className='mt-2 px-1 text-blog-sec text-[12px]'>12 de agosto, 2025</p>
             </article>
 
             <article className='col-span-2 row-start-3 group relative flex flex-col justify-start cursor-pointer'>
@@ -130,7 +130,7 @@ const Articles = () => {
                         </a>
                     </div>
                 </div>
-                <p className='mt-2 px-1 text-blog-sec'>12 de agosto, 2025</p>
+                <p className='mt-2 px-1 text-blog-sec text-[12px]'>12 de agosto, 2025</p>
             </article>
             
         </div>
