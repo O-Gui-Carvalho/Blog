@@ -4,6 +4,7 @@ import React from 'react'
 import logo from '../../public/logo-ctrl-dev.svg'
 import MenuButton from './menuButton/MenuButton'
 import ToggleTheme from './ToggleTheme'
+import Login from './Login'
 
 const Header = () => {
   return (
@@ -31,6 +32,7 @@ const Header = () => {
             </Link>
             <nav className='flex align-top justify-center gap-3'>
                 <ToggleTheme/>
+                <Login/>
                 <MenuButton/>
             </nav>
         </div>

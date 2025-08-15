@@ -26,6 +26,8 @@ const navItems = [
 
 export default function index() {
 
+  const isAdmin = true;
+
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
@@ -42,16 +44,23 @@ export default function index() {
                     <div className={styles.header}>
                         <p>Menu</p>
                     </div>
-                    {
-                      navItems.map( (data, index) => {
-                        return <Link 
-                        key={index} 
-                        data={{...data, index}} 
-                        isActive={selectedIndicator == data.href} 
-                        setSelectedIndicator={setSelectedIndicator}>
-                        </Link>
-                      })
-                    }
+                    {navItems.map((data, index) => (
+                      <Link
+                        key={data.href ?? index}
+                        data={{ ...data, index }}
+                        isActive={selectedIndicator === data.href}
+                        setSelectedIndicator={setSelectedIndicator}
+                      />
+                    ))}
+
+                    {isAdmin && (
+                      <Link
+                        key="admin-link"
+                        data={{ title: 'Criar Post', href: '/criar-post', index: navItems.length }}
+                        isActive={selectedIndicator === '/criar-post'}
+                        setSelectedIndicator={setSelectedIndicator}
+                      />
+                    )}
             </div>
             <div className={styles.footer}>
                 <a>Awwwards</a>
