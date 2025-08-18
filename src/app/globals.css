@@ -15,5 +15,13 @@
 }
 
 .button{
-  @apply flex items-center justify-center gap-2 max-w-fit py-4 px-8 rounded-lg bg-[#CCEEFF] dark:bg-[#083045] hover:bg-[#083045] dark:hover:bg-[#CCEEFF] hover:text-[#CCEEFF] dark:hover:text-[#083045] cursor-pointer transition-colors duration-300;
+  @apply flex items-center justify-center gap-2 max-w-fit py-4 px-8 rounded-lg bg-[hsl(200,100%,80%)] dark:bg-[#083045] hover:bg-[#083045] dark:hover:bg-[#CCEEFF] hover:text-[#CCEEFF] dark:hover:text-[#083045] cursor-pointer transition-colors duration-300;
+}
+
+.section-blog{
+  @apply min-h-screen max-w-[1400px] w-[90vw] mx-auto transition-colors duration-300;
+}
+
+.form{
+  @apply flex flex-col gap-4;
 }

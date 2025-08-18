@@ -56,8 +56,8 @@ export default function index() {
                     {isAdmin && (
                       <Link
                         key="admin-link"
-                        data={{ title: 'Criar Post', href: '/criar-post', index: navItems.length }}
-                        isActive={selectedIndicator === '/criar-post'}
+                        data={{ title: 'Criar Post', href: '/admin/create', index: navItems.length }}
+                        isActive={selectedIndicator === '/admin/create'}
                         setSelectedIndicator={setSelectedIndicator}
                       />
                     )}
