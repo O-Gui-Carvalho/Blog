@@ -5,9 +5,6 @@ import Image from "next/image";
 
 export default async function Home() {
 
-  const users = await prisma.user.findMany()
-  console.log(users)
-
   return (
     <main className="min-h-screen pt-56 max-w-[1400px] w-[90vw] mx-auto background transition-colors duration-300">
       <div className="text-start space-y-5 mb-24">
