@@ -9,7 +9,7 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
-    domains: ["img.freepik.com"],
+    domains: ["img.freepik.com", "ctrldev.com.br"],
   },
 };
 

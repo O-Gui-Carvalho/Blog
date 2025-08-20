@@ -25,3 +25,11 @@
 .form{
   @apply flex flex-col gap-4;
 }
+
+.link{
+  @apply text-[#607580] hover:text-[#00011A] dark:text-[#B9C6CC] dark:hover:text-[#F2F2F2] text-xl font-light transition-colors duration-300;
+}
+
+.link-active{
+  @apply text-[#0D2F40] hover:text-[#007FBF] dark:text-[#F2F2F2] dark:hover:text-[#007FBF] text-xl font-medium transition-colors duration-300;
+}

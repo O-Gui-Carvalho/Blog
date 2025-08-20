@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BlogCard = ({ title, date, img, cat, catLink }) => {
   return (
-    <article className="col-span-2 group relative flex flex-col justify-start cursor-pointer">
+    <article className="group relative flex flex-col justify-start cursor-pointer">
       <div>
         <div className="relative h-[358px] overflow-hidden rounded-2xl xl:h-[442px]">
           <Image
