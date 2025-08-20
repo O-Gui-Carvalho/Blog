@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import ArticlesNav from './ArticlesNav'
 import BlogCard from './BlogCardTeste'
+import Link from 'next/link';
 
 async function getPosts(){
   const res = await fetch("http://localhost:3000/api/posts", { cache: "no-store" });
@@ -21,13 +22,15 @@ export default async function Articles() {
             key={post.id}
             className="col-span-1 lg:first:col-span-2 lg:last:col-span-2"
           >
-            <BlogCard
-              title={post.title}
-              date={new Date(post.createdAt).toLocaleDateString("pt-BR")}
-              img={post.image}
-              cat={post.category?.name}
-              catLink={`/category/${post.category?.name}`}
-            />
+            <Link href={`/posts/${post.id}`}>
+              <BlogCard
+                title={post.title}
+                date={new Date(post.createdAt).toLocaleDateString("pt-BR")}
+                img={post.image}
+                cat={post.category?.name}
+                catLink={`/category/${post.category?.name}`}
+              />
+            </Link>
           </div>
         ))}
       </div>
